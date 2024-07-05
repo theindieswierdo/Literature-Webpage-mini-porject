@@ -1,0 +1,107 @@
+<html lang="en">
+<header class="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay in touch!</title>
+    <nav>
+        <a href="lit.html">Home</a>
+        <a href="litAboutPage.html">About</a>
+        <a href="litEventsPage.html">Events</a>
+        <a class="contus" href="#">Contact Us</a>
+        <img class = "logo" src="LitLogo.png" alt="Logo of the Literature and Writing Society" width="70px" height="70px">
+    </nav>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 251, 247);
+            color: black;
+            margin: 0%;
+            text-align: center;
+        }
+        header.head{
+            position: -webkit-sticky; /* Safari needs this */
+            position: sticky;/*makes the navbar stay at the top of the page when scrolling*/
+            top: 0;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 5px 5px rgba(177, 176, 176, 0.2);
+            
+        }
+        nav img{
+            float: right;
+            margin-top: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+        nav a:hover{
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            background-color: rgb(146, 211, 146);
+        }
+        .contus{
+            color: green;
+            border-radius: 9%;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+        .logo{
+            margin-top: -27px;
+        }
+           
+        h1,p,form{
+            padding-left: 30px;
+            margin: 30px;/*alignment of content on the page*/
+        }
+        #feedback{
+            border: solid black 1px;
+            border-radius: 2%;
+            box-shadow: 0px 5px 5px rgba(177, 176, 176, 0.2);
+        }
+        button{
+            border: none;
+            font-family: inherit;
+            padding: 13px;
+            border-radius: 5%;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3); 
+        }
+        button:hover{
+            cursor: grab;
+            transform: translateY(-5px);
+        }
+        button:active{
+            background-color: rgb(0, 183, 122);
+            border-radius: 5px;
+            transform: translateY(4px);
+        }
+
+    
+    </style>
+</header>
+<body>
+    <h1>Welcome to Keele Literature & Writing Society!</h1>
+    <p>
+         We value feedback as it helps us work towards the best experience we can ever give to our members. Please complete the review down below.
+    </p>
+    <form action="#">
+        <p><label for="thoughts"></label></p>
+        <textarea id="feedback" name="thoughts" rows="20" cols="50">At our society we encourage continuous improvements. Please share your thoughts and feelings on today's session</textarea>
+        <br>
+        <br>
+        <button id="button" type="submit">submit</button>
+        
+            <!-- <input type="submit" value="submit"> -->
+      </form>
+    
+</body>
+<hr>
+<footer>#</footer>
+<script>
+    const redirectTextBox = document.getElementById("button");
+    redirectTextBox.addEventListener("click", function() {
+        window.location.replace = "#";
+    });
+</script>
+</html>
