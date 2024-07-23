@@ -49,16 +49,40 @@
             padding-left: 30px;
             margin: 30px;/*alignment of content on the page*/
         }
+        .img1, .img2, .img3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .img1 {
+                background-image: url("3.png");
+                min-height: 100%;
+        }
+
+        .img2 {
+            background-image: url("2.png");
+            min-height: 400px;
+        }
+
+        .img3 {
+            background-image: url("Landing Page.png");
+            min-height: 400px;
+        }
 
     
     </style>
 </header>
 <body>
+    <div class="img1">
         <h1>Welcome to Keele Literature & Writing Society!</h1>
         <img src="#" alt="#" width="300px" height="200px">
+    </div>
 
-
-
+    <div class="img2">
         <h2>
         What's on?
         </h2>
@@ -66,15 +90,15 @@
         <img src="#" alt="#" width="300px" height="200px">
         <img src="#" alt="#" width="300px" height="200px">
         <h2>
-    
+    </div>
 
-    
+    <div class="img3">
         <h2>
         Want to join us?
         </h2>
         <img src="#" alt="" width="300px" height="200px">
         <p>follow us on...</p>
-
+    </div>
 </body>
 <hr>
 <footer>#</footer>
